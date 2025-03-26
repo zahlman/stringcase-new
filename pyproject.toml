@@ -1,15 +1,22 @@
 [project]
-name = "stringcase"
-version = "1.2.1"
+name = "stringcase-new"
+version = "1.2.2"
 description = "String case converter."
+readme = "README.rst"
 license = "MIT"
 
 [[project.authors]]
 name = "Taka Okunishi"
 email = "okunishitaka.com@gmail.com"
 
+[[project.maintainers]]
+name = "Karl Knechtel"
+email = "zahlman@proton.me"
+
 [project.urls]
-homepage = "https://github.com/okunishinishi/python-stringcase"
+bugs = "https://github.com/zahlman/stringcase-new/issues"
+changelog = "https://github.com/zahlman/stringcase-new/blob/master/changelog.md"
+homepage = "https://github.com/zahlman/stringcase-new"
 
 [build-system]
 requires = [ "setuptools >= 77" ] # for PEP 639 support
