@@ -1,8 +1,11 @@
 # Build system stuff
 *.egg-info/
-__pycache__
 build
 dist
+
+# Python temporary files
+*.pyc
+__pycache__
 
 # Vim temporary files
 *.swp
