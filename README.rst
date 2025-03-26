@@ -3,7 +3,28 @@ stringcase
 
 Convert string cases between camel case, pascal case, snake case etc...
 
-|build_status_badge| |coverage_badge| |pypi_version_badge|
+|pypi_version_badge|
+
+About this fork
+---------------
+
+This is a manually created fork of the original ``stringcase`` by `Taka Okunishi <http://okunishitaka.com>`__ (`@okunishinishi <http://github.com/okunishinishi>`__), intended to:
+
+* Fix failing tests
+* Modernize and simplify the packaging setup
+* Distribute a wheel on PyPI
+
+Commits and merges from the original repository that were made after the last release have been moved onto a separate branch, and will be cherry-picked in as appropriate - where they actually fix bugs or move the project in the direction I intend.
+
+Version numbers continue where the original left off, so that maintainers only need to change ``stringcase`` to ``stringcase-new`` in their ``pyproject.toml``, ``requirements.txt`` etc. files.
+
+The code continues to be available under an MIT license.
+
+No meaningful new functionality is introduced, and the bugfixes are straightforward, so I assert no additional copyright.
+
+This fork was prompted by `recent ecosystem breakage resulting from the breaking change in Setuptools 78 <https://github.com/pypa/setuptools/issues/4910>`__, which affected many users of this previously source-only project. Providing a wheel also `greatly speeds up installation <https://pradyunsg.me/blog/2022/12/31/wheels-are-faster-pure-python/>`__.
+
+-- Your humble maintainer, Karl Knechtel (@zahlman).
 
 Usage
 -----
@@ -42,25 +63,18 @@ Usage
 Install
 -------
 
+Because I do not own the original PyPI project, a new PyPI name is required:
+
 ::
 
-    $ pip install stringcase
+    $ pip install stringcase-new
 
 License
 -------
 
-This software is released under the `MIT License <https://github.com/okunishinishi/python-stringcase/blob/master/LICENSE>`__.
+This software is released under the `MIT License <https://github.com/zahlman/stringcase-new/blob/master/LICENSE>`__.
 
 
-Author
-------
-
--  `Taka Okunishi <http://okunishitaka.com>`__
-
-.. |build_status_badge| image:: http://img.shields.io/travis/okunishinishi/python-stringcase.svg?style=flat
-   :target: http://travis-ci.org/okunishinishi/python-stringcase
-.. |coverage_badge| image:: http://img.shields.io/coveralls/apeman-repo/apeman-task-contrib-coz.svg?style=flat
-   :target: https://coveralls.io/github/apeman-repo/apeman-task-contrib-coz
-.. |pypi_version_badge| image:: https://img.shields.io/pypi/v/stringcase.svg
-   :target: https://pypi.python.org/pypi/stringcase
+.. |pypi_version_badge| image:: https://img.shields.io/pypi/v/stringcase-new.svg
+   :target: https://pypi.python.org/pypi/stringcase-new
 
