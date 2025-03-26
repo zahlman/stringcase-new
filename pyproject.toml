@@ -1,0 +1,19 @@
+[project]
+name = "stringcase"
+version = "1.2.1"
+description = "String case converter."
+license = "MIT"
+
+[[project.authors]]
+name = "Taka Okunishi"
+email = "okunishitaka.com@gmail.com"
+
+[project.urls]
+homepage = "https://github.com/okunishinishi/python-stringcase"
+
+[build-system]
+requires = [ "setuptools >= 77" ] # for PEP 639 support
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = [ "stringcase" ]
