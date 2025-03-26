@@ -19,8 +19,8 @@ changelog = "https://github.com/zahlman/stringcase-new/blob/master/changelog.md"
 homepage = "https://github.com/zahlman/stringcase-new"
 
 [build-system]
-requires = [ "setuptools >= 77" ] # for PEP 639 support
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3.11,<4"]
+build-backend = "flit_core.buildapi"
 
-[tool.setuptools]
-py-modules = [ "stringcase" ]
+[tool.flit.module]
+name = "stringcase"
