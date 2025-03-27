@@ -5,7 +5,6 @@ from unittest import TestCase
 from os import path
 import sys
 
-sys.path.append(path.dirname(__file__))
 import stringcase
 
 print("here")
